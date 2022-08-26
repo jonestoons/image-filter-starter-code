@@ -1,6 +1,7 @@
-import express from 'express';
+import express, {Request, Response}  from 'express';
 import bodyParser from 'body-parser';
 import {filterImageFromURL, deleteLocalFiles} from './util/util';
+
 
 
 (async () => {
@@ -20,7 +21,7 @@ import {filterImageFromURL, deleteLocalFiles} from './util/util';
   // @TODO1 IMPLEMENT A RESTFUL ENDPOINT
   // GET /filteredimage?image_url={{URL}}
   // endpoint to filter an image from a public url.
-  app.get('/filteredimage', async (req, res) => {
+  app.get('/filteredimage', async (req: Request, res: Response) => {
     let { image_url }: { image_url: string } = req.query;
 
     if(!image_url){

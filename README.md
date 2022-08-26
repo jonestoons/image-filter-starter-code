@@ -27,6 +27,9 @@ Follow the process described in the course to `eb init` a new application and `e
 ### Endpoint URL for the running beanstalk deployment
 (http://tresbiendev-dev.us-east-1.elasticbeanstalk.com/filteredimage?image_url={{url}})
 
+
+### Github repository URL 
+https://github.com/jonestoons/image-filter-starter-code.git
 <!-- ## Stand Out (Optional)
 
 ### Refactor the course RESTapi
